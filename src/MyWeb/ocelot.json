@@ -1,0 +1,19 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/public-api/users",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "gorest.co.in",
+                    "Port": 443
+                }
+            ],
+            "UpstreamPathTemplate": "/users/a",
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "BasicAuthentication",
+                "AllowedScopes": []
+            }
+        }
+    ]
+}
